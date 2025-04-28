@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"; // Correct import for App Router is next/navigation if needed, but keeping next/router for now based on original code
 import { FiCheckCircle } from "react-icons/fi";
 
 interface PricingTeaserProps {
@@ -12,15 +12,15 @@ interface PricingTeaserProps {
 }
 
 const PricingTeaser: React.FC<PricingTeaserProps> = ({
-  title = "Simple, Transparent Pricing",
-  subtitle = "We offer a free plan to get you started. No credit card required.",
-  buttonText = "View Full Pricing Plans",
+  title = "Simple, Magical Pricing",
+  subtitle = "Start creating for free! Upgrade anytime to unlock premium styles and features.",
+  buttonText = "Explore Premium Plans",
   pricingLink = "/pricing",
   freeFeatures = [
-    "Feature One",
-    "Feature Two",
-    "Feature Three",
-    "Feature Four",
+    "Generate art from text prompts",
+    "Access to basic art styles",
+    "Standard resolution downloads",
+    "Limited generations per day",
   ],
   onButtonClick,
 }) => {
@@ -41,16 +41,17 @@ const PricingTeaser: React.FC<PricingTeaserProps> = ({
           {subtitle}
           <br />
           <span className="text-primary font-semibold">
-            Upgrade to unlock more features.
+            Perfect for getting started with AI art generation.
           </span>
         </p>
 
         <div className="bg-base-100 p-6 rounded-lg shadow-md border border-base-300 inline-block mb-8">
-          <h3 className="text-xl font-semibold mb-3">Try it free:</h3>
+          <h3 className="text-xl font-semibold mb-3">Free Plan Includes:</h3>
           <ul className="list-none space-y-2 text-left">
             {freeFeatures.map((feature, index) => (
               <li key={index} className="flex items-center gap-2">
-                <FiCheckCircle className="text-success" /> {feature}
+                <FiCheckCircle className="text-success flex-shrink-0" />{" "}
+                {feature}
               </li>
             ))}
           </ul>

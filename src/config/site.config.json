@@ -1,16 +1,16 @@
 {
   "site": {
-    "title": "Site Title",
-    "tagline": "Your Compelling Tagline",
-    "companyName": "Your Company Name",
-    "domain": "https://yourdomain.com",
-    "description": "Comprehensive description of your product or service",
-    "keywords": "keyword1, keyword2, keyword3, keyword4",
-    "contactEmail": "contact@yourdomain.com",
-    "privacyEmail": "privacy@yourdomain.com",
+    "title": "Genie Sketch",
+    "tagline": "Your Artistic Wish is Our Command",
+    "companyName": "Genie Sketch",
+    "domain": "https://geniesketch.com",
+    "description": "Discover the joy of coloring with personalized, downloadable art patterns created just for you. From simple designs to intricate masterpieces, find your perfect coloring escape.",
+    "keywords": "coloring patterns, adult coloring, custom patterns, artistic patterns, printable coloring pages, stress relief, creative art, coloring art, pattern generator",
+    "contactEmail": "create@geniesketch.com",
+    "privacyEmail": "privacy@geniesketch.com",
     "logo": {
       "path": "/images/logo.svg",
-      "alt": "Company Logo"
+      "alt": "Genie Sketch - Coloring Pattern Generator"
     },
     "socialImages": {
       "ogImage": "/images/og_image.jpg",
@@ -26,193 +26,199 @@
   },
   "landing": {
     "hero": {
-      "title": "Main headline for your landing page",
-      "subtitle": "Compelling subheading that explains your value proposition",
+      "title": "Art On-Demand: You Wish it, We Sketch it",
+      "subtitle": "Immerse yourself in the world of personal creativity with unique coloring patterns generated specifically for your preferences and artistic ability.",
       "primaryCTA": {
-        "text": "Get Started",
+        "text": "Create Your Pattern",
         "url": "/register"
       },
       "secondaryCTA": {
-        "text": "Learn More",
-        "url": "#how-it-works"
+        "text": "Browse Pattern Gallery",
+        "url": "#gallery"
       },
-      "image": "/images/hero.png"
+      "image": "/images/hero-coloring.png"
     },
     "valueProposition": {
-      "title": "Why Choose Us",
-      "subtitle": "Discover the benefits that set us apart",
+      "title": "Craft Your Palette, Color Your World",
+      "subtitle": "Experience the therapeutic joy of coloring with patterns designed specifically for you",
       "features": [
         {
-          "title": "Feature 1",
-          "description": "Description of feature 1",
-          "icon": "IconName1"
+          "title": "Personalized Patterns",
+          "description": "Unique art styles generated just for you, from simple to complex based on your preferences",
+          "icon": "PaintBrush"
         },
         {
-          "title": "Feature 2",
-          "description": "Description of feature 2",
-          "icon": "IconName2"
+          "title": "Print & Create Anytime",
+          "description": "Download, print, and color whenever inspiration strikes or you need a creative escape",
+          "icon": "Printer"
         },
         {
-          "title": "Feature 3",
-          "description": "Description of feature 3",
-          "icon": "IconName3"
+          "title": "Endless Variety",
+          "description": "From mandalas to landscapes, abstract designs to structured patterns - the possibilities are infinite",
+          "icon": "ColorPalette"
         }
       ]
     },
     "howItWorks": {
-      "title": "How It Works",
-      "subtitle": "Simple steps to get started",
+      "title": "Creating Your Perfect Coloring Experience",
       "steps": [
         {
-          "title": "Step 1",
-          "description": "Description of step 1",
-          "image": "/images/step1.png"
+          "title": "1. Choose Your Style",
+          "description": "Select from various pattern styles: mandalas, geometric, nature-inspired, abstract, or completely custom",
+          "icon": "ArtStyles"
         },
         {
-          "title": "Step 2",
-          "description": "Description of step 2",
-          "image": "/images/step2.png"
+          "title": "2. Set Complexity",
+          "description": "Tell us your preferred complexity level from simple and relaxing to intricate and challenging",
+          "icon": "Settings"
         },
         {
-          "title": "Step 3",
-          "description": "Description of step 3",
-          "image": "/images/step3.png"
+          "title": "3. Generate",
+          "description": "Our AI creates your unique pattern based on your preferences in seconds",
+          "icon": "Magic"
+        },
+        {
+          "title": "4. Color & Enjoy",
+          "description": "Download, print and bring your pattern to life with your favorite coloring tools",
+          "icon": "ColorPencil"
         }
       ]
     },
-    "screenshots": {
-      "title": "Product Screenshots",
-      "subtitle": "See our product in action",
-      "images": [
-        {
-          "src": "/images/screenshot1.png",
-          "alt": "Screenshot 1 description",
-          "caption": "Caption for screenshot 1"
-        },
-        {
-          "src": "/images/screenshot2.png",
-          "alt": "Screenshot 2 description",
-          "caption": "Caption for screenshot 2"
-        }
-      ]
+    "productScreenshots": {
+      "title": "Patterns That Inspire Creativity",
+      "subtitle": "From simple relaxing designs to intricate artistic challenges - there's a perfect pattern for everyone",
+      "ctaText": "Create Your Pattern",
+      "ctaLink": "/register",
+      "videoSrc": "/videos/pattern_creation.mp4",
+      "actionBoxTitle": "Ready for your coloring adventure?",
+      "actionBoxDescription": "Join thousands who've discovered the therapeutic joy of coloring personalized patterns."
     },
     "pricing": {
-      "title": "Pricing Plans",
-      "subtitle": "Choose the perfect plan for your needs",
-      "plans": [
+      "title": "Simple Plans for Your Creative Journey",
+      "subtitle": "From casual colorists to artistic enthusiasts",
+      "specialOfferText": "Launch special: 25% off all plans for early members!",
+      "tiers": [
         {
           "name": "Free",
-          "price": "0",
-          "description": "For individuals just getting started",
-          "features": ["Feature 1", "Feature 2", "Feature 3"],
-          "cta": {
-            "text": "Get Started",
-            "url": "/register"
-          },
-          "highlighted": false
+          "price": "Free",
+          "billingPeriod": "forever",
+          "description": "Perfect for casual coloring",
+          "features": [
+            { "text": "3 pattern generations per month", "included": true },
+            { "text": "Basic pattern styles", "included": true },
+            { "text": "Standard resolution downloads", "included": true },
+            { "text": "Community pattern sharing", "included": true },
+            { "text": "Advanced pattern styles", "included": false },
+            { "text": "Custom color recommendations", "included": false }
+          ],
+          "primaryAction": "Start Coloring",
+          "primaryActionLink": "/register",
+          "highlight": false
         },
         {
-          "name": "Pro",
-          "price": "29",
-          "description": "For professionals and growing teams",
+          "name": "Colorist",
+          "price": "$7.99",
+          "billingPeriod": "/month",
+          "description": "For regular coloring enthusiasts",
           "features": [
-            "Everything in Free",
-            "Pro Feature 1",
-            "Pro Feature 2",
-            "Pro Feature 3"
+            { "text": "20 pattern generations per month", "included": true },
+            { "text": "All basic pattern styles", "included": true },
+            { "text": "Medium complexity patterns", "included": true },
+            { "text": "High-resolution downloads", "included": true },
+            { "text": "Pattern modification tools", "included": true },
+            { "text": "Custom color recommendations", "included": true }
           ],
-          "cta": {
-            "text": "Start Free Trial",
-            "url": "/register?plan=pro"
-          },
-          "highlighted": true
+          "primaryAction": "Start 7-Day Free Trial",
+          "primaryActionLink": "/register?plan=colorist",
+          "highlight": true,
+          "badge": "POPULAR"
+        },
+        {
+          "name": "Artist",
+          "price": "$14.99",
+          "billingPeriod": "/month",
+          "description": "For dedicated artistic creators",
+          "features": [
+            { "text": "Unlimited pattern generations", "included": true },
+            { "text": "All pattern styles & complexity", "included": true },
+            { "text": "Highest resolution downloads", "included": true },
+            { "text": "Advanced pattern customization", "included": true },
+            { "text": "Color palette suggestions", "included": true },
+            { "text": "Pattern collections & series", "included": true }
+          ],
+          "primaryAction": "Start 7-Day Free Trial",
+          "primaryActionLink": "/register?plan=artist",
+          "highlight": false
+        }
+      ]
+    },
+    "pricingTeaser": {
+      "title": "Start Your Coloring Journey",
+      "subtitle": "Explore a new world of creative relaxation with patterns designed just for you",
+      "buttonText": "See All Membership Options",
+      "freeFeatures": [
+        "3 unique patterns monthly",
+        "Basic pattern styles",
+        "Printable PDF downloads",
+        "Community sharing"
+      ]
+    },
+    "trustSafety": {
+      "title": "Create With Confidence",
+      "items": [
+        {
+          "title": "High-Quality Patterns",
+          "description": "Every pattern optimized for clear printing and enjoyable coloring",
+          "icon": "Star"
+        },
+        {
+          "title": "Print-Ready Files",
+          "description": "Download formats perfect for home printing in various sizes",
+          "icon": "Document"
+        },
+        {
+          "title": "Creative Freedom",
+          "description": "Personal use license included with all downloaded patterns",
+          "icon": "Lock"
+        },
+        {
+          "title": "Privacy Respected",
+          "description": "Your pattern preferences and creations remain private",
+          "icon": "Shield"
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Find answers to common questions",
-      "questions": [
+      "title": "Common Questions About Genie Sketch",
+      "items": [
         {
-          "question": "What is [Product Name]?",
-          "answer": "Answer to the question about what your product is."
+          "question": "What tools do I need for coloring my patterns?",
+          "answer": "You can use any coloring tools you prefer! Our patterns work beautifully with colored pencils, markers, gel pens, or even digital coloring apps. The patterns are designed to work with whatever medium you enjoy most."
         },
         {
-          "question": "How does pricing work?",
-          "answer": "Information about your pricing structure."
+          "question": "Can I print patterns in different sizes?",
+          "answer": "Yes! All patterns are provided in high-resolution PDF format that can be printed in various sizes from standard letter/A4 up to larger formats. You can print at home or take to a print shop for larger formats."
         },
         {
-          "question": "Can I cancel my subscription?",
-          "answer": "Details about cancellation policy."
+          "question": "How many unique patterns can I access?",
+          "answer": "Our system can generate an unlimited variety of patterns. Free members can create 3 new patterns monthly, while paid plans offer 20 or unlimited generations depending on your subscription level."
+        },
+        {
+          "question": "Are the patterns suitable for beginners and children?",
+          "answer": "Absolutely! You can specify your desired complexity level from very simple patterns perfect for beginners and children to intricate designs for experienced colorists. You control the complexity based on your preferences."
+        },
+        {
+          "question": "Can I share or sell my colored creations?",
+          "answer": "You can freely share your colored creations on social media and with friends. The basic license allows for personal use and sharing of completed work. Commercial licenses for selling colored patterns are available with our Artist plan."
         }
       ]
     },
-    "cta": {
-      "title": "Ready to get started?",
-      "subtitle": "Join thousands of satisfied users today",
-      "buttonText": "Start Free Trial",
-      "buttonUrl": "/register"
-    },
-    "trustSafety": {
-      "title": "Trusted by Companies Everywhere",
-      "logos": [
-        {
-          "src": "/images/company1.svg",
-          "alt": "Company 1"
-        },
-        {
-          "src": "/images/company2.svg",
-          "alt": "Company 2"
-        }
-      ],
-      "testimonials": [
-        {
-          "quote": "This product has transformed how we work.",
-          "author": "Jane Doe",
-          "title": "CEO, Company Name",
-          "avatar": "/images/testimonial1.jpg"
-        }
-      ]
-    }
-  },
-  "legal": {
-    "terms": {
-      "lastUpdated": "January 1, 2023",
-      "sections": [
-        {
-          "title": "1. Acceptance of Terms",
-          "content": "By accessing or using {site.companyName} (\"Service\"), you agree to be bound by these Terms and Conditions."
-        },
-        {
-          "title": "2. Use of the Service",
-          "content": "{site.companyName} provides a platform for users to {description}. The Service is provided \"as is\" and \"as available\" without warranties of any kind."
-        }
-      ]
-    },
-    "privacy": {
-      "lastUpdated": "January 1, 2023",
-      "sections": [
-        {
-          "title": "1. Information We Collect",
-          "content": "We collect information that you provide directly to us, including:",
-          "listItems": [
-            "Account information (name, email address, password)",
-            "Profile information",
-            "Content you create within the Service",
-            "Communications you have with us"
-          ]
-        },
-        {
-          "title": "2. How We Use Your Information",
-          "content": "We use the information we collect to:",
-          "listItems": [
-            "Provide, maintain, and improve our Service",
-            "Process transactions",
-            "Send you technical notices, updates, and support messages",
-            "Respond to your comments and questions"
-          ]
-        }
-      ]
+    "finalCTA": {
+      "headline": "Endless Art, Infinite Possibilities",
+      "subtext": "Join thousands of coloring enthusiasts who use Genie Sketch to create personalized, therapeutic art experiences. Your perfect pattern is just seconds away.",
+      "buttonText": "Start Creating Patterns",
+      "buttonLink": "/register",
+      "variant": "primary"
     }
   }
 }

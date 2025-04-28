@@ -59,6 +59,27 @@ export class SiteConfig {
   public getAll(): any {
     return this.config;
   }
+  
+  /**
+   * Set a configuration value by path
+   * @param path Dot notation path to the config value
+   * @param value Value to set
+   */
+  public set(path: string, value: any): void {
+    const keys = path.split('.');
+    const lastKey = keys.pop();
+    
+    if (!lastKey) return;
+    
+    const target = keys.reduce((obj: any, key: string) => {
+      if (obj[key] === undefined) {
+        obj[key] = {};
+      }
+      return obj[key];
+    }, this.config);
+    
+    target[lastKey] = value;
+  }
 }
 
 /**

@@ -1,5 +1,7 @@
 import React from "react";
-import { FiEdit, FiList, FiSend } from "react-icons/fi";
+// Choose relevant icons: Idea/Wish, Magic/Generate, Download/Color
+import { FiEdit, FiDownload } from "react-icons/fi";
+import { BsMagic } from "react-icons/bs";
 
 interface HowItWorksProps {
   title?: string;
@@ -11,27 +13,27 @@ interface HowItWorksProps {
 }
 
 const HowItWorks: React.FC<HowItWorksProps> = ({
-  title = "How It Works",
+  title = "Your Artistic Wish is Our Command",
   steps: propSteps,
 }) => {
   const defaultSteps = [
     {
       icon: <FiEdit className="text-4xl text-primary" />,
-      title: "1. First Step",
+      title: "1. Describe Your Vision",
       description:
-        "Describe the first step of your process. Explain what users need to do to get started with your product.",
+        "Tell Genie Sketch what you want to create. Be descriptive! Mention subjects, styles, colors, or moods.",
     },
     {
-      icon: <FiList className="text-4xl text-primary" />,
-      title: "2. Second Step",
+      icon: <BsMagic className="text-4xl text-primary" />,
+      title: "2. We Sketch Your Wish",
       description:
-        "Describe the second step of your process. Explain how users can get the most out of your product features.",
+        "Our AI genie gets to work, interpreting your prompt and generating unique artwork just for you.",
     },
     {
-      icon: <FiSend className="text-4xl text-primary" />,
-      title: "3. Final Step",
+      icon: <FiDownload className="text-4xl text-primary" />,
+      title: "3. Download & Enjoy",
       description:
-        "Describe the final step of your process. Explain how users can achieve their goals with your product.",
+        "Receive your personalized art, ready to download. Print it out, color it in, or simply admire your creation!",
     },
   ];
 

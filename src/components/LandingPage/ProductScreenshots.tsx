@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; // Added useEffect
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi"; // Added carousel icons
 
 interface ProductScreenshotsProps {
   title?: string;

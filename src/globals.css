@@ -1,65 +1,65 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light, boosttoad --default;
+  themes: light, geniesketch --default;
 }
 @plugin "daisyui/theme" {
-  name: "boosttoad";
+  name: "geniesketch";
   default: true;
   prefersdark: false;
   color-scheme: light;
 
-  --color-base-100: oklch(98% 0.02 140); /* soft lily pad green */
-  --color-base-200: oklch(95% 0.03 140);
-  --color-base-300: oklch(91% 0.04 140);
-  --color-base-content: oklch(25% 0.05 140); /* muted green-gray text */
+  --color-base-100: oklch(98% 0.015 280); /* soft, magical lilac */
+  --color-base-200: oklch(95% 0.02 280);
+  --color-base-300: oklch(90% 0.03 280);
+  --color-base-content: oklch(25% 0.04 280); /* muted purple-gray text */
 
-  --color-primary: oklch(60% 0.28 150); /* vibrant froggy green */
-  --color-primary-content: oklch(98% 0.01 150); /* white on green */
+  --color-primary: oklch(65% 0.25 250); /* bright genie blue */
+  --color-primary-content: oklch(98% 0.01 250); /* white on blue */
 
-  --color-secondary: oklch(70% 0.25 330); /* fun rocket pink */
-  --color-secondary-content: oklch(98% 0.01 330);
+  --color-secondary: oklch(75% 0.28 70); /* cheerful golden yellow */
+  --color-secondary-content: oklch(25% 0.04 70);
 
-  --color-accent: oklch(65% 0.3 270); /* retro gadget purple */
-  --color-accent-content: oklch(98% 0.01 270);
+  --color-accent: oklch(70% 0.3 320); /* playful art pink */
+  --color-accent-content: oklch(98% 0.01 320);
 
-  --color-neutral: oklch(30% 0.02 180); /* deep pondy teal */
-  --color-neutral-content: oklch(98% 0.01 180);
+  --color-neutral: oklch(30% 0.02 220); /* deep twilight blue */
+  --color-neutral-content: oklch(98% 0.01 220);
 
-  --color-info: oklch(70% 0.2 210); /* clear sky blue */
+  --color-info: oklch(72% 0.2 210); /* sky blue for info */
   --color-info-content: oklch(98% 0.01 210);
 
-  --color-success: oklch(62% 0.25 120); /* success leaf green */
-  --color-success-content: oklch(98% 0.01 120);
+  --color-success: oklch(62% 0.22 140); /* fresh green success */
+  --color-success-content: oklch(98% 0.01 140);
 
-  --color-warning: oklch(85% 0.3 90); /* warning yolk yellow */
+  --color-warning: oklch(85% 0.3 90); /* bright sunrise warning */
   --color-warning-content: oklch(30% 0.05 90);
 
-  --color-error: oklch(60% 0.3 30); /* burnt orange error */
-  --color-error-content: oklch(98% 0.01 30);
+  --color-error: oklch(55% 0.25 20); /* soft clay red error */
+  --color-error-content: oklch(98% 0.01 20);
 
   /* Border radius */
-  --radius-selector: 1rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
+  --radius-selector: 1.5rem; /* rounder, friendly shapes */
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
 
   /* Base sizes */
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
+  --size-selector: 0.3rem;
+  --size-field: 0.3rem;
 
   /* Border size */
   --border: 1px;
 
   /* Effects */
-  --depth: 2;
-  --noise: 0.01;
+  --depth: 3; /* slightly deeper shadows */
+  --noise: 0.02; /* gentle texture */
 }
 
 .font-sans {
-  font-family: var(--font-custom, "sans-serif");
+  font-family: var(--font-custom, "Poppins", "sans-serif");
 }
 
 .font-mono {
-  font-family: var(--font-custom2, "monospace");
+  font-family: var(--font-custom2, "Fira Mono", "monospace");
 }
 
 h1,
@@ -68,5 +68,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-custom2, "sans-serif");
+  font-family: var(--font-custom2, "Poppins", "sans-serif");
 }

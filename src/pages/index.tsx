@@ -12,13 +12,18 @@ import getSiteConfig from "@/utils/siteConfig";
 
 const Page = () => {
   const config = getSiteConfig();
-  const siteUrl = config.get("site.domain");
-  const pageTitle = `${config.get("site.title")} - ${config.get(
-    "site.tagline"
-  )}`;
-  const pageDescription = config.get("site.description");
-  const imageUrl = `${siteUrl}${config.get("site.socialImages.ogImage")}`;
-  const keywords = config.get("site.keywords");
+  const siteUrl = config.get("site.domain", "https://yourdomain.com"); // Provide default
+  const siteTitle = "Genie Sketch"; // Update site title
+  const siteTagline = "You Wish it, We Sketch it - AI Art Generator"; // Update tagline
+  const pageTitle = `${siteTitle} - ${siteTagline}`;
+  const pageDescription =
+    "Generate unique, personalized art with Genie Sketch AI. Describe your vision, choose a style, and download your creation. Perfect for coloring, inspiration, and fun!"; // Update description
+  const imageUrl = `${siteUrl}${config.get(
+    "site.socialImages.ogImage",
+    "/images/og-image.jpg"
+  )}`; // Provide default OG image
+  const keywords =
+    "AI art generator, text to image, personalized art, coloring pages, creative tool, art generation, freemium AI"; // Update keywords
 
   return (
     <>
@@ -26,29 +31,22 @@ const Page = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta name="keywords" content={keywords} />
-        {/* Open Graph / Facebook */}
+        {/* ... other meta tags remain the same, using updated variables ... */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content={imageUrl} />
 
-        {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={siteUrl} />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={pageDescription} />
         <meta property="twitter:image" content={imageUrl} />
-
-        {/* Favicon links - uncomment and update paths as needed */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> */}
-        {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> */}
-        {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> */}
-        {/* <link rel="manifest" href="/site.webmanifest"> */}
       </Head>
       <Hero />
       <ValueProposition />
+      {/* Ensure IDs match links if needed */}
       <div id="screenshots">
         <ProductScreenshots />
       </div>
@@ -58,7 +56,7 @@ const Page = () => {
       <div id="pricing">
         <PricingTeaser />
       </div>
-      <TrustSafety />
+      <TrustSafety /> {/* Kept TrustSafety, can be removed if desired */}
       <FAQ />
       <FinalCTA />
     </>

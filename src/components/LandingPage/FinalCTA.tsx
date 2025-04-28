@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/router"; // Keeping next/router based on original
 import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -15,11 +15,11 @@ interface FinalCTAProps {
 }
 
 const FinalCTA: React.FC<FinalCTAProps> = ({
-  headline = "Ready to Get Started Today?",
-  subtext = "Join hundreds of users who've already discovered the power of our platform. Get your personalized experience in just seconds.",
-  buttonText = "Get Started Now",
-  buttonLink = "/signup",
-  logoSrc = "/logo/icon.png",
+  headline = "Endless Art, Infinite Possibilities",
+  subtext = "Ready to bring your imagination to life? Start generating unique, personalized art with Genie Sketch in just seconds.",
+  buttonText = "Grant My First Wish!",
+  buttonLink = "/generate", // Link to generation page
+  logoSrc = "/logo/icon.png", // Ensure this path is correct
   variant = "primary",
   onButtonClick,
 }) => {
@@ -85,7 +85,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({
         </div>
 
         <p className="text-primary-content/70 mt-2">
-          No credit card required. Get started in seconds.
+          Start free. No credit card required.
         </p>
       </motion.div>
     </div>

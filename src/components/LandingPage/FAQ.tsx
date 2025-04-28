@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import Link from "next/link"; // Import Link for internal links
 
 interface FAQItem {
   question: string;
@@ -52,71 +53,87 @@ const FAQItemComponent: React.FC<FAQItemProps> = ({
 const FAQ: React.FC<FAQProps> = ({
   title = "Frequently Asked Questions",
   faqs: propFaqs,
-  defaultOpenIndex = 0,
+  defaultOpenIndex = -1, // Default to closed
 }) => {
   const [openIndex, setOpenIndex] = useState<number>(defaultOpenIndex);
 
   const defaultFaqs = [
     {
-      question: "What services do you offer?",
+      question: "How does Genie Sketch create personalized art?",
       answer: (
         <p>
-          We offer a comprehensive suite of services designed to meet your
-          needs. Our core offerings include [Service 1], [Service 2], and
-          [Service 3], all designed to help you achieve your goals efficiently.
+          Genie Sketch uses advanced AI algorithms. You provide a text prompt
+          describing what you want (e.g., "a watercolor painting of a fox in a
+          forest"), and our AI interprets it to generate a unique image based on
+          your description and selected style preferences.
         </p>
       ),
     },
     {
-      question: "How much does it cost?",
+      question: "What kind of art styles can I generate?",
       answer: (
         <p>
-          We offer flexible pricing plans to meet different needs and budgets.
-          Our plans start at $X per month, with options to upgrade as your needs
-          grow. Check our pricing page for detailed information on each plan's
-          features.
+          We offer a growing library of styles, from realistic and photographic
+          to cartoonish, abstract, watercolor, oil painting, and more. The free
+          plan includes basic styles, while premium plans unlock a wider, more
+          exclusive range. Explore the{" "}
+          <Link href="#screenshots" className="link link-primary">
+            gallery
+          </Link>{" "}
+          for examples!
         </p>
       ),
     },
     {
-      question: "Do you offer a free trial?",
+      question: "Is there a limit to how many images I can generate?",
       answer: (
         <p>
-          Yes! We offer a X-day free trial with no credit card required. This
-          gives you full access to explore our platform and see how it can
-          benefit your workflow before making a commitment.
+          Our free plan includes a limited number of generations per day to
+          allow everyone a chance to try Genie Sketch. Premium plans offer
+          significantly more generations, faster processing, and higher priority
+          access. See our{" "}
+          <Link href="/pricing" className="link link-primary">
+            Pricing Page
+          </Link>{" "}
+          for details.
         </p>
       ),
     },
     {
-      question: "How secure is your platform?",
+      question: "How do I download my generated art?",
       answer: (
         <p>
-          Security is our top priority. We implement industry-standard security
-          measures including encryption, secure data storage, and regular
-          security audits. All user data is protected according to best
-          practices and compliance requirements.
+          Once your art is generated, you'll see options to download it directly
+          to your device. Downloads are typically provided in standard image
+          formats like PNG or JPG, suitable for viewing, sharing, or printing.
+          Premium users may have access to higher resolution downloads.
         </p>
       ),
     },
     {
-      question: "What kind of support do you offer?",
+      question: "Can I use the generated images commercially?",
       answer: (
         <p>
-          We provide comprehensive support through various channels including
-          email, live chat, and knowledge base articles. Premium plans include
-          priority support with faster response times and dedicated support
-          specialists.
+          Usage rights depend on the plan you choose. Generally, images
+          generated under the free plan are for personal, non-commercial use.
+          Some premium plans may offer commercial usage rights. Please refer to
+          our Terms of Service and{" "}
+          <Link href="/pricing" className="link link-primary">
+            Pricing Page
+          </Link>{" "}
+          for specific licensing information.
         </p>
       ),
     },
     {
-      question: "Can I cancel my subscription?",
+      question: "What are the benefits of upgrading to a premium plan?",
       answer: (
         <p>
-          Yes, you can cancel your subscription at any time. There are no
-          long-term contracts or cancellation fees. Your subscription will
-          remain active until the end of your current billing period.
+          Premium plans offer several advantages, including more daily
+          generations, access to exclusive art styles, higher resolution
+          downloads, faster generation speeds, priority support, and potentially
+          commercial usage rights. It's the best way to fully unlock the power
+          of Genie Sketch.
         </p>
       ),
     },

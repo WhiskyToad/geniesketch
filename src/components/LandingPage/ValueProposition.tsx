@@ -1,6 +1,8 @@
 import React from "react";
-import { FiZap, FiTool } from "react-icons/fi"; // Example icons
-import { BsKanban } from "react-icons/bs"; // Import a Kanban-related icon
+// Choose icons relevant to art, personalization, relaxation, download
+import { FiGift, FiSmile, FiDownload } from "react-icons/fi";
+import { FaPalette as FiPalette } from "react-icons/fa";
+import { BsStars } from "react-icons/bs"; // For personalization/uniqueness
 
 interface ValuePropositionProps {
   features?: Array<{
@@ -15,20 +17,34 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
 }) => {
   const defaultFeatures = [
     {
-      icon: <FiZap className="w-10 h-10 text-primary" />,
-      title: "Feature One",
-      description: "Describe your first key feature or value proposition here.",
-    },
-    {
-      icon: <FiTool className="w-10 h-10 text-primary" />,
-      title: "Feature Two",
+      icon: <BsStars className="w-10 h-10 text-primary" />,
+      title: "Personalized Artistry",
       description:
-        "Describe your second key feature or value proposition here.",
+        "Get unique art styles crafted just for you based on your preferences and prompts.",
     },
     {
-      icon: <BsKanban className="w-10 h-10 text-primary" />,
-      title: "Feature Three",
-      description: "Describe your third key feature or value proposition here.",
+      icon: <FiSmile className="w-10 h-10 text-primary" />,
+      title: "Relax & Create",
+      description:
+        "Access a relaxing, creative activity anytime. Unwind and enjoy the joy of coloring.",
+    },
+    {
+      icon: <FiPalette className="w-10 h-10 text-primary" />,
+      title: "Diverse Styles",
+      description:
+        "Explore a constantly updated database of art styles catering to diverse tastes.",
+    },
+    {
+      icon: <FiGift className="w-10 h-10 text-primary" />,
+      title: "Freemium Access",
+      description:
+        "Start for free! Premium options available for exclusive styles and features.",
+    },
+    {
+      icon: <FiDownload className="w-10 h-10 text-primary" />,
+      title: "Easy Download & Print",
+      description:
+        "Download your generated art easily and print it from the comfort of your home.",
     },
   ];
 
@@ -37,7 +53,8 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({
   return (
     <section className="py-16 bg-base-200">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        {/* Adjust grid columns based on the number of features */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
           {features.map((feature, index) => (
             <div
               key={index}
